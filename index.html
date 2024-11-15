@@ -4,18 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-    <h2>Promedio de notas</h2>
-    <p>Nota 1 : <input type="text"  id="n1"> </p>
-    <p>Nota 2 : <input type="text"  id="n2"> </p>
-    <p>Nota 3 : <input type="text"  id="n3"> </p>
-    <p>Nota 4 : <input type="text"  id="n4"> </p>
-    <p>Nota 5 : <input type="text"  id="n5"> </p>
-    <p>Nota 6 : <input type="text"  id="n6"> </p>
-    <p><input type="button" value="Calcular" onclick="CalcularPromedio()"></p>
-    <p id="promedio"></p>
-    <script src="functions.js"></script>
-    
+    <div class="calculadora">
+        <h2 class="title">Promedio de notas</h2>
+        <div class="notas">
+            <p>Nota 1 : <input type="text"  id="n1"> </p>
+            <p>Nota 2 : <input type="text"  id="n2"> </p>
+            <p>Nota 3 : <input type="text"  id="n3"> </p>
+            <p>Nota 4 : <input type="text"  id="n4"> </p>
+            <p>Nota 5 : <input type="text"  id="n5"> </p>
+            <p>Nota 6 : <input type="text"  id="n6"> </p>
+        </div>
+        <p class="button"><input type="button" value="Sumar" onclick="CalcularSuma()"></p>
+        <div id="info" class="disabled">
+            <p>La suma de las notas es:<span id="suma"></span></p>
+            <p>El promedio es:<span id="promedio"></span></p>
+        </div>
+    </div>
+    <script src="assets/functions.js"></script>
 </body>
 </html>
